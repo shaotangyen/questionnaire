@@ -148,12 +148,14 @@ function renderMessage(message) {
 
 function updateQuestion() {
     currentQuestion++;
-    if (currentQuestion < questionArray.length) {
-        renderQuestion();
-    } else {
-        setTimerToZero();
-        displayResult();
-    }
+    setTimeout(function () {
+        if (currentQuestion < questionArray.length) {
+            renderQuestion();
+        } else {
+            setTimerToZero();
+            displayResult();
+        }
+    }, 300);
 }
 
 function displayResult() {
@@ -184,7 +186,7 @@ function init() {
         highscoreList = storedList;
     }
     timerDisplay.textContent = "Timer: " + timeLeft;
-    loadingTextDisplay.textContent = "Are you ready for the quiz?! You have "+timeLeft+" seconds to answer "+questionArray.length+" questions. Each correct answer will grant you "+points+" points. Each wrong answer will deduct "+timeDeduction+" seconds from your time. Think Quick & Good Luck!";
+    loadingTextDisplay.textContent = "Are you ready for the quiz?! You have " + timeLeft + " seconds to answer " + questionArray.length + " questions. Each correct answer will grant you " + points + " points. Each wrong answer will deduct " + timeDeduction + " seconds from your time. Think Quick & Good Luck!";
     questionSectionDisplay.style.display = "none";
     resultSectionDisplay.style.display = "none";
     messageSectionDisplay.style.display = "none";
