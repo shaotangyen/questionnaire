@@ -148,14 +148,14 @@ function renderMessage(message) {
 
 function updateQuestion() {
     currentQuestion++;
-    setTimeout(function () {
-        if (currentQuestion < questionArray.length) {
-            renderQuestion();
-        } else {
-            setTimerToZero();
-            displayResult();
-        }
-    }, 300);
+    
+    if (currentQuestion < questionArray.length) {
+        renderQuestion();
+    } else {
+        setTimerToZero();
+        displayResult();
+    }
+
 }
 
 function displayResult() {
