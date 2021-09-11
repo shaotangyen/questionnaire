@@ -62,12 +62,12 @@ var timeDeduction = 4;
 var submitButton = document.querySelector("#submit");
 var highscoreList = [];
 
-choiceOneText.addEventListener("click", checkResult);
-choiceTwoText.addEventListener("click", checkResult);
-choiceThreeText.addEventListener("click", checkResult);
-choiceFourText.addEventListener("click", checkResult);
+choiceOneText.addEventListener("mouseup", checkResult);
+choiceTwoText.addEventListener("mouseup", checkResult);
+choiceThreeText.addEventListener("mouseup", checkResult);
+choiceFourText.addEventListener("mouseup", checkResult);
 
-submitButton.addEventListener("click", function (event) {
+submitButton.addEventListener("mouseup", function (event) {
     event.preventDefault();
 
     var initials = document.querySelector("#initials").value;
