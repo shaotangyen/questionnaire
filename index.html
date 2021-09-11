@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Quiz Trivia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="max-width">
+            <ul class="menu">
+                <li><a href="highscores.html">View Highscores</a></li>
+                <li id ="timer">Timer: Start!</li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="loading-screen">
+            <div class="max-width">
+                <div class="content">
+                    <h1 id="loading-title">Food Quiz Trivia!</h1>
+                    <img src="Assets/img/table-with-grains-vegetables-fruit-768.jpg" alt="an cover image of fruits">
+                    <p id="loading-text"></p>
+                    <h2 id="begin">BEGIN</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="question">
+            <div class="max-width">
+                <div class="content">
+                    <h1 id="question-title">TITLE</h1>
+                    <h2 id="choice-A"><span>ANSWER1</span></h2>
+                    <h2 id="choice-B">ANSWER2</h2>
+                    <h2 id="choice-C">ANSWER3</h2>
+                    <h2 id="choice-D">ANSWER4</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="result">
+            <div class="max-width">
+                <div class="content">
+                    <h1 id="result-title">All done!</h1>
+                    <p id="result-text">Your final score is XX.</p>
+                    <form>
+                        <label >Enter initials: </label>
+                        <input type="text" id="initials" placeholder="STY"/>
+                        <button id="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="message-display">
+            <div class="max-width">
+                <div class="content">
+                    <hr>
+                    <p id="message">CORRECT!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="Assets/js/script.js"></script>
+</body>
+
+</html>
