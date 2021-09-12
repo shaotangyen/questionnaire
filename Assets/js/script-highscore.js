@@ -33,7 +33,7 @@ function init() {
         renderList(storedList);
     } else {
         scoreList.innerHTML = ''; //clear all lists in ul
-        outputString = "No one participated yet.";
+        outputString = "No participants yet.";
         renderNoParticipent();
     }
 }

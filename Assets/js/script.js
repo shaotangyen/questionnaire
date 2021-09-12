@@ -1,3 +1,4 @@
+//set all questions and correct answer in an array of objects
 var questionArray = [
     {
         questionTitle: "Question 1: Aussies love cooking snags on their barbie. What is a snag?",
@@ -39,7 +40,7 @@ var questionArray = [
         choiceFour: "D) Fruit cake",
         correctAnswer: "A"
     }
-]
+];
 var beginButton = document.querySelector("#begin");
 var loadingSectionDisplay = document.querySelector(".loading-screen");
 var questionTitle = document.querySelector("#question-title");
@@ -123,9 +124,9 @@ function setTimerToZero() {
     timerDisplay.textContent = "Timer: " + timeLeft;
 }
 
+//check choices are clicked, check if answer is correct, then add points or reduce time
 function checkResult(event) {
-    //check what's clicked and add score or reduce time
-    var picked = event.target.id.slice(-1); //get the last letter of the id string
+    var picked = event.target.id.slice(-1); //get the last ID letter of the clicked element
     if (picked === questionArray[currentQuestion].correctAnswer) {
         //if answer is correct
         finalScore += points;
@@ -162,6 +163,11 @@ function displayResult() {
     questionSectionDisplay.style.display = "none";
     resultSectionDisplay.style.display = "block";
     resultDisplay.textContent = "Your final score is " + finalScore + ".";
+    if(finalScore === points*questionArray.length){ //full mark
+        resultDisplay.textContent += " Well done!";
+    } else if (finalScore === 0){
+        resultDisplay.textContent += " Clearly you do not like food, do you.";
+    }
 }
 
 function renderQuestion() {

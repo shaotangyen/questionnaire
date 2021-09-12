@@ -1,89 +1,36 @@
-# 04 Web APIs: Code Quiz
+# Food Quiz Trivia Time!
 
-## Your Task
+## The Game
 
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
+This is a Trivia web page game that has a set of questions, a timer and points. In today's quiz, you will be given 40 seconds for 5 questions. Each correct answer will grant you 20 points. Each wrong answer will deduct 4 seconds from your time.
 
-To help familiarize you with these tests and allow you to use the skills covered in this unit, this week’s homework invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
+## The design
 
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
+There are 2 HTML, 1 CSS and 2 Javascript files.
 
-## User Story
+The first index.html provides the fundamentals of the game which has a loading screen, a set of questions and the result page that allows you to put in your initials and store your score in the local storage.
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+The second highscores.html shows a list of highscore participants in ranking. Data are stored in the local storage on browser and you can clear it with a button.
 
-## Acceptance Criteria
+The style.css contains all styles of both pages, including layouts and button styles.
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-```
+The script.js runs the functions for index.html. It contains all the questions, timer, score points, final scores, rendering of all questions and HTML sections, and take care of event actions for all clickable buttons.
 
-## Mock-Up
+The script-highscore.js runs the functions for highscores.html. It renders the list from local storage, take care of event actions for all clickable buttons.
 
-The following animation demonstrates the application functionality:
+## Links
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+Please go to [LINK](https://shaotangyen.github.io/questionnaire/) to check out the final page.
 
-## Grading Requirements
+Or [Link](https://github.com/shaotangyen/questionnaire) to go to GitHub page.
 
-This homework is graded based on the following criteria: 
 
-### Technical Acceptance Criteria: 40%
+## Screenshots
 
-* Satisfies all of the preceding acceptance criteria.
+The following animation demonstrates the Food Quiz Trivia functionality:
 
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
+![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/demo.gif)
 
 ---
 
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+© 2021 Made by Shao

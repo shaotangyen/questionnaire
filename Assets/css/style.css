@@ -13,6 +13,8 @@
     margin: auto;
 }
 
+/* navbar section */
+
 .navbar {
     width: 100%;
 }
@@ -26,6 +28,29 @@
 
 .navbar .menu li{
     list-style: none;
+}
+
+.navbar #highscore-btn{
+    font-weight: 400;
+    padding:5px 10px;
+    background:steelblue;
+    color:white;
+    border-radius: 5px;
+}
+
+.navbar #highscore-btn:hover{
+    background:rgb(96, 169, 230);
+    font-weight: 600;
+    color:lightcyan;
+    cursor: pointer;
+}
+
+.navbar #highscore-btn a{
+    color:white;
+}
+
+.navbar #highscore-btn a:hover{
+    color:lightcyan;
 }
 
 /*loading screen section*/
@@ -122,7 +147,7 @@
     text-align: center;
 }
 
-.result p {
+.result p{
     padding: 10px 0px 10px 50px;
 }
 
