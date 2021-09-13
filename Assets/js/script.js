@@ -1,44 +1,44 @@
 //set all questions and correct answer in an array of objects
 var questionArray = [
     {
-        questionTitle: "Question 1: Aussies love cooking snags on their barbie. What is a snag?",
-        choiceOne: "A) Chicken Leg",
-        choiceTwo: "B) Sausage",
-        choiceThree: "C) Steak",
-        choiceFour: "D) Prawn",
-        correctAnswer: "B"
-    },
-    {
-        questionTitle: "Question 2: What did Spanish sailors first introduce to the people of Europe?",
-        choiceOne: "A) Broad beans",
-        choiceTwo: "B) Potatoes",
-        choiceThree: "C) Carrots",
-        choiceFour: "D) Peas",
-        correctAnswer: "B"
-    },
-    {
-        questionTitle: "Question 3: Which drink is associated with 'Oktoberfest'?",
-        choiceOne: "A) Wine",
-        choiceTwo: "B) Brandy",
-        choiceThree: "C) Vodka",
-        choiceFour: "D) Beer",
-        correctAnswer: "D"
-    },
-    {
-        questionTitle: "Question 4: What internationally popular Italian dish has its origins in Naples?",
-        choiceOne: "A) Risotto",
-        choiceTwo: "B) Gelato",
-        choiceThree: "C) Pizza",
-        choiceFour: "D) Lasagne",
+        questionTitle: "Question 1: The Tag is used To Give Heading To The Table.",
+        choiceOne: "A) Head",
+        choiceTwo: "B) Td",
+        choiceThree: "C) Th",
+        choiceFour: "D) Caption",
         correctAnswer: "C"
     },
     {
-        questionTitle: "Question 5: What is Black Pudding?",
-        choiceOne: "A) Sausage made from blood",
-        choiceTwo: "B) Citrus fruit",
-        choiceThree: "C) Nickname for a Rolls Royce",
-        choiceFour: "D) Fruit cake",
+        questionTitle: "Question 2: Which Of The Dialog Box Display a Text Message?",
+        choiceOne: "A) Alert()",
+        choiceTwo: "B) Prompt()",
+        choiceThree: "C) Confirm()",
+        choiceFour: "D) Msg()",
         correctAnswer: "A"
+    },
+    {
+        questionTitle: "Question 3: Inside which HTML element do we put the JavaScript?",
+        choiceOne: "A) js",
+        choiceTwo: "B) javaScript",
+        choiceThree: "C) script",
+        choiceFour: "D) scripting",
+        correctAnswer: "C"
+    },
+    {
+        questionTitle: "Question 4: Who created JavaScript?",
+        choiceOne: "A) Microsoft",
+        choiceTwo: "B) Sun Microsystems",
+        choiceThree: "C) Oracle",
+        choiceFour: "D) Netscape",
+        correctAnswer: "D"
+    },
+    {
+        questionTitle: "Question 5: Which of the following is not a reserved word in JavaScript?",
+        choiceOne: "A) interface",
+        choiceTwo: "B) throws",
+        choiceThree: "C) program",
+        choiceFour: "D) short",
+        correctAnswer: "C"
     }
 ];
 var beginButton = document.querySelector("#begin");
@@ -103,6 +103,7 @@ function sortObjectArrayBasedOnScore(highscoreList, highscoreObj) {
                 break;
             }
         }
+        
     }
 }
 
@@ -166,7 +167,7 @@ function displayResult() {
     if(finalScore === points*questionArray.length){ //full mark
         resultDisplay.textContent += " Well done!";
     } else if (finalScore === 0){
-        resultDisplay.textContent += " Clearly you do not like food, do you.";
+        resultDisplay.textContent += " Clearly you do not like JavaScript, do you.";
     }
 }
 
